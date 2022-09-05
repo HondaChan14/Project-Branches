@@ -270,12 +270,21 @@ body>footer{
   article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 3vmin 0;
     padding: 5vmin;
   }
 
+  article p {
+    width: 100%;
+  }
+
   article h4 {
-    flex-basis: 50%;
+    width: fit-content;
+  }
+
+  article p, article h4 {
+    color: #374956;
   }
   
   article h4.dueDate {
@@ -283,7 +292,7 @@ body>footer{
   }
 
   article > * {
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
   }
 
    /* Project Due Date Styling */
@@ -294,6 +303,15 @@ body>footer{
 
   .alert .dueDate {
     color: #B58F00;
+  }
+
+  .completed {
+    background-color: #F0F8C5;
+  }
+
+  .completed .fas.fa-check-circle {
+    color: #8FD14F;
+    font-size: 2rem;
   }
 
   .neutral {
