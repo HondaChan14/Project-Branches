@@ -15,7 +15,7 @@
   <%- include('partials/header') %>
 
   <main class="container">
-      <h2>Add Project</h2>
+      <h2>  Add Project <img src="/assets/addProject-lightbulb.png" alt="lamp" class ="signup-img" width="100" height="100">   </h2>
       <form action="/projects/addProject" method="POST">
         <label for="title">
           Title
@@ -27,9 +27,9 @@
           <input type="date" id="dueDate" name="dueDate">
         </label>
 
-         <label for="members">
+         <label for="teamMembers">
           Team Members
-          <input type="text" id="members" name="members" placeholder="Team Members" required>
+          <input type="text" id="teamMembers" name="teamMembers" placeholder="Team Members" required>
           </label>
 
           <!--<details role="list">
